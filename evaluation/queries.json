@@ -1,0 +1,104 @@
+[
+  {
+    "query_id": "q01",
+    "query": "How does retrieval augmented generation reduce hallucination?",
+    "relevant_paper_ids": [
+      "2404.08189v1",
+      "2604.20854v1",
+      "2402.13178v2",
+      "2502.06864v1"
+    ]
+  },
+  {
+    "query_id": "q02",
+    "query": "What is Reciprocal Rank Fusion and how is it used in hybrid retrieval?",
+    "relevant_paper_ids": [
+      "2503.02922v1",
+      "2603.02153v1",
+      "2402.03367v2",
+      "2601.05264v1"
+    ]
+  },
+  {
+    "query_id": "q03",
+    "query": "How does BM25 perform keyword-based information retrieval?",
+    "relevant_paper_ids": [
+      "2501.09136v4",
+      "2505.08450v2",
+      "2407.09394v2",
+      "2403.10081v3"
+    ]
+  },
+  {
+    "query_id": "q04",
+    "query": "What are the advantages of combining dense retrieval with BM25?",
+    "relevant_paper_ids": [
+      "2608.06828v1",
+      "2503.23013v1",
+      "2604.19899v1",
+      "2506.16988v2",
+      "2403.10081v3"
+    ]
+  },
+  {
+    "query_id": "q05",
+    "query": "How does reranking improve retrieval augmented generation?",
+    "relevant_paper_ids": [
+      "2602.18734v2",
+      "2609.04647v1",
+      "2410.20833v2",
+      "2607.26071v1"
+    ]
+  },
+  {
+    "query_id": "q06",
+    "query": "How do embedding models represent semantic similarity between documents?",
+    "relevant_paper_ids": [
+      "2407.15353v2",
+      "2605.27445v1",
+      "2606.28330v1",
+      "2607.11159v1"
+    ]
+  },
+  {
+    "query_id": "q07",
+    "query": "How can query rewriting improve retrieval quality in RAG systems?",
+    "relevant_paper_ids": [
+      "2408.08921v2",
+      "2603.02153v1",
+      "2506.00054v1",
+      "2401.15884v3"
+    ]
+  },
+  {
+    "query_id": "q08",
+    "query": "What challenges arise when applying retrieval augmented generation to medical question answering?",
+    "relevant_paper_ids": [
+      "2402.13178v2",
+      "2601.16503v2",
+      "2308.00479v1",
+      "2509.21237v1"
+    ]
+  },
+  {
+    "query_id": "q09",
+    "query": "How can external knowledge improve the factuality of large language model responses?",
+    "relevant_paper_ids": [
+      "2604.20854v1",
+      "2502.06148v1",
+      "2506.05939v1",
+      "2605.18772v1",
+      "2409.10102v2"
+    ]
+  },
+  {
+    "query_id": "q10",
+    "query": "What are the main advantages and limitations of vector databases for retrieval augmented generation?",
+    "relevant_paper_ids": [
+      "2601.05264v1",
+      "2411.11895v1",
+      "2404.13781v1",
+      "2504.08748v1"
+    ]
+  }
+]
