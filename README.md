@@ -8,7 +8,7 @@ The project is designed as an end-to-end AI engineering system rather than a sim
 
 ## Architecture
 
-![Architecture Diagram](assets/architecture.png)
+<img src="assets/architecture.png" alt="Architecture Diagram" width="50%">
 
 ---
 
