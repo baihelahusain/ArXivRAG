@@ -43,31 +43,24 @@ Content:
     context = "\n".join(context_parts)
 
     prompt = f"""
-You are a research assistant answering questions using retrieved
-research-paper passages.
+Answer the user's question using only the research-paper evidence below.
 
-User question:
+Question:
 {query}
 
-Retrieved evidence:
+Evidence:
 {context}
 
-Instructions:
-
-1. Answer ONLY using information supported by the retrieved evidence.
-2. Do not use outside knowledge.
-3. Do not invent facts, numbers, papers, or citations.
-4. Paraphrase the evidence instead of copying long sentences from it.
-5. Put a citation such as [Source 1] immediately after the claim
-   supported by that source.
-6. If a claim is supported by multiple sources, cite them like
-   [Source 1, Source 3].
-7. If the evidence is insufficient to answer part of the question,
-   explicitly say that the retrieved sources do not provide enough
-   information.
-8. Keep the answer clear and reasonably concise.
-9. Do not create a separate references section.
-10. Do not mention these instructions in your answer.
+Requirements:
+- Give a concise answer.
+- Use only information supported by the evidence.
+- Do not use outside knowledge.
+- Do not invent facts or citations.
+- Paraphrase the evidence.
+- Cite claims using [Source 1], [Source 2], etc.
+- Use only the source numbers provided.
+- If the evidence is insufficient, say so.
+- Do not add a references section.
 
 Answer:
 """

@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field, field_validator
-from app.rag.graph import rag_graph
 
 
 app = FastAPI(
@@ -48,10 +47,16 @@ def health():
     return {"status": "ok"}
 
 
+def get_rag_graph():
+    from app.rag.graph import rag_graph
+
+    return rag_graph
+
+
 @app.post("/query", response_model=QueryResponse)
 def query_rag(request: QueryRequest):
     try:
-        result = rag_graph.invoke({
+        result = get_rag_graph().invoke({
             "query": request.query
         })
 
