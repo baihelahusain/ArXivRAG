@@ -8,63 +8,7 @@ The project is designed as an end-to-end AI engineering system rather than a sim
 
 ## Architecture
 
-```text
-                         arXiv Research Papers
-                                  │
-                                  ▼
-                         Incremental Ingestion
-                                  │
-                                  ▼
-                            PDF Parsing
-                                  │
-                                  ▼
-                            Text Cleaning
-                                  │
-                                  ▼
-                       Section-Aware Chunking
-                                  │
-                                  ▼
-                     BAAI/bge-small-en-v1.5
-                              Embeddings
-                                  │
-                    ┌─────────────┴─────────────┐
-                    │                           │
-                    ▼                           ▼
-                 Qdrant                   OpenSearch
-             Dense Retrieval              BM25 Retrieval
-                    │                           │
-                    └─────────────┬─────────────┘
-                                  ▼
-                     Reciprocal Rank Fusion
-                                (RRF)
-                                  │
-                                  ▼
-                       BGE Cross-Encoder
-                            Reranking
-                                  │
-                                  ▼
-                         Relevance Grading
-                                  │
-                         ┌────────┴────────┐
-                         │                 │
-                    Relevant          Not Relevant
-                         │                 │
-                         ▼                 ▼
-                     Generate        Query Rewrite
-                         │                 │
-                         │          Retrieve Again
-                         │                 │
-                         └────────┬────────┘
-                                  ▼
-                            Ollama LLM
-                                  │
-                                  ▼
-                       Answer + Citations
-                                  │
-                                  ▼
-                              FastAPI
-                              REST API
-```
+<img src="assets/architecture.png" alt="Architecture Diagram" width="500">
 
 ---
 
