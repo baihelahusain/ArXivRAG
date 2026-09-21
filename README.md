@@ -519,8 +519,8 @@ See [LICENSE](LICENSE) for details.
 
 **Baihela Hussain**
 
-Computer Engineering — Data Science
+Computer Engineering — Honours in Data Science
 
 GitHub: https://github.com/baihelahusain/
 
-LinkedIn: https://www.linkedin.com/in/baihela-hussain/
+LinkedIn: https://www.linkedin.com/in/baihelahussain/
